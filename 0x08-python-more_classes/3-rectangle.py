@@ -68,6 +68,6 @@ class Rectangle:
         return ("".join(rect))
 
     """ Or else:
-                return (('#' * self.__width + '\n') * (self.__height - 1) 
+                return (('#' * self.__width + '\n') * (self.__height - 1)
                 + '#' * self.width)
     """
