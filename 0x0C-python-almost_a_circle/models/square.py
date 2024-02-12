@@ -18,5 +18,21 @@ class Square(Rectangle):
         super().__init__(size, size, x, y, id)
 
     def __str__(self):
-        """Returns the print() and str() representation of the new Square"""
-        return f"[Square] ({self.id}) {self.x}/{self.y} - {self.width}"
+        """Returns the print() and str() representation of the the Square"""
+        return "[Square] ({}) {}/{} - {}".format(self.id, self.x,
+                                                 self.y, self.width)
+
+    @property
+    def size(self):
+        """Get the size of the Square"""
+        return (self.width)
+
+    @size.setter
+    def size(self, value):
+        """set the value for size"""
+        if type(value) != int:
+            raise TypeError("width must be an integer")
+        if value <= 0:
+            raise ValueError("width must be > 0")
+        self.width = value
+        self.height = value
