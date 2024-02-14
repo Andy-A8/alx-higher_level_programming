@@ -2,16 +2,17 @@
 """Defines unittests for Rectangle module (rectangle.py).
 
 Unittest classes:
-    TestRectangle_instantiation - line 20
-    TestRectangle_width - line 1109
-    TestRectangle_height - line 185
-    TestRectangle_x - line 257
-    TestRectangle_y - line 329
-    TestRectangle_order_of_initialization - line 398
-    TestRectangle_area - line 425
-    TestRectangle_update_args - line 535
-    TestRectangle_update_kwargs - line 679
-    TestRectangle_to_dictionary - line 798
+    TestRectangle_instantiation - line 23
+    TestRectangle_width - line 112
+    TestRectangle_height - line 188
+    TestRectangle_x - line 260
+    TestRectangle_y - line 332
+    TestRectangle_order_of_initialization - line 400
+    TestRectangle_area - line 428
+    TestRectangle_stdout - line 451
+    TestRectangle_update_args - line 537
+    TestRectangle_update_kwargs - line 675
+    TestRectangle_to_dictionary - line 787
 """
 import io
 import sys
