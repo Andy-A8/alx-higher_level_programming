@@ -2,7 +2,7 @@
 -- The tv_shows table contains only one record where title = Dexter (but the id can be different)
 -- Each record should display: tv_genres.name
 -- Results must be sorted in ascending order by the genre name
--- Use only one SELECT statement
+-- Use maximum of two SELECT statement
 -- The database name will be passed as an argument of the mysql command
 
 SELECT `tv_genres`.`name`
