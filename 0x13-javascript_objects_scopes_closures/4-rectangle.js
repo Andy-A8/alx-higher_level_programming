@@ -1,6 +1,6 @@
 #!/usr/bin/node
 /**
- * Represents a class Rectangle
+ * Represents a class Rectangle with initialized instance attributes w and h
  */
 class Rectangle {
   constructor (w, h) {
@@ -10,6 +10,7 @@ class Rectangle {
     }
   }
 
+  // An instance method that prints the rectangle using 'X'
   print () {
     let row = '';
     for (let i = 0; i < this.width; i++) {
@@ -20,6 +21,7 @@ class Rectangle {
     }
   }
 
+  // An instance method that exchanges the width and the height
   rotate () {
     let temp = 0;
     temp = this.width;
@@ -27,6 +29,7 @@ class Rectangle {
     this.height = temp;
   }
 
+  // An instance method that multiples width and height of the rectangle by 2
   double () {
     this.width *= 2;
     this.height *= 2;
