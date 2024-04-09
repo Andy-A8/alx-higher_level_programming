@@ -1,7 +1,7 @@
 #!/usr/bin/node
 /**
- *  * Represents a class Rectangle
- *   */
+ * Represents a class Rectangle
+ */
 class Rectangle {
   constructor (w, h) {
     if (w > 0 && h > 0) {
@@ -10,7 +10,7 @@ class Rectangle {
     }
   }
 
-// Create an instance method 'print' that prints the rectangle using 'X'
+  // Create an instance method 'print' that prints the rectangle using 'X
   print () {
     let row = '';
     for (let i = 0; i < this.width; i++) {
