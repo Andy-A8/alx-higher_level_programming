@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/usr/bin/python3
 """
     Takes my GitHub credentials (username and password) and uses
     the GitHub API to display your id:
@@ -9,10 +9,12 @@
 """
 import requests
 import sys
+from requests.auth import HTTPBasicAuth
 
 if __name__ == "__main__":
     url = 'https://api.github.com/user'
+    auth = HTTPBasicAuth(sys.argv[1], sys.argv[2])
 
-    req = requests.get(url, auth=(sys.argv[1], sys.argv[2]))
+    req = requests.get(url, auth=auth)
     r = req.json()
     print(r.get('id'))
